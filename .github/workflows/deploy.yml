@@ -21,6 +21,7 @@ jobs:
         run: | # `run: |` 的方式，允许我们一次定义多个要执行的命令
           yarn install
           yarn run build
+          
       - name: Push To Pages
         working-directory: ./dist # 指定下面指令运行的目录
         run: |
