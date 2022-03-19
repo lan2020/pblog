@@ -28,7 +28,7 @@ jobs:
           git checkout -b main
           git add -A
         # 这里把下面所有 `<YOUR_NAME>/<YOUR_EMAIL>/<COMMIT_MSG>/<YOUR_TOKEN>` 替换成你自己的就可以了
-          git -c user.name='<YOUR_NAME>' -c user.email='<YOUR_EMAIL>' commit -m '<COMMIT_MSG>'
+          git -c user.name='lantouzi2020' -c user.email='lantouzi2020@gmail.com' commit -m 'public'
         # 这里需要一个 共开仓库 的 secrets 配置，这里的 secrets 是一个环境变量，可以直接拿过来直接用
-          git remote add origin https://${{secrets.<YOUR_TOKEN>}}@github.com/<YOUR_NAME>/blog.git
+          git remote add origin https://${{secrets.pblog}}@github.com/lan2020/pblog.git
           git push origin main -f -q
